@@ -1,10 +1,14 @@
 # https://stackoverflow.com/a/42287988 by mgutt:
 
 test input:
+```
     http://example.com/?^1234567890ß´qwertzuiopü+asdfghjklöä#<yxcvbnm,.-°!"§$%&/()=? `QWERTZUIOPÜ*ASDFGHJKLÖÄ\\\'>YXCVBNM;:_²³{[]}|µ@€~
+```
 
 expected output:
+```
     http://example.com/?^1234567890%C3%9F%C2%B4qwertzuiop%C3%BC+asdfghjkl%C3%B6%C3%A4#<yxcvbnm,.-%C2%B0!"%C2%A7$%&/()=? `QWERTZUIOP%C3%9C*ASDFGHJKL%C3%96%C3%84\\\'>YXCVBNM;:_%C2%B2%C2%B3{[]}|%C2%B5@%E2%82%AC~
+```
 
 # from http://formvalidation.io/validators/uri/
 ## Valid URL
